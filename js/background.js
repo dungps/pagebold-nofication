@@ -11,8 +11,8 @@ chrome.storage.local.get(['nextalarm'], function(result) {
   if (!result.nextalarm) {
     var today = new Date();
     var datecheck = new Date();
-    datecheck.setHours(12);
-    datecheck.setMinutes(10);
+    datecheck.setHours(17);
+    datecheck.setMinutes(00);
     datecheck.setSeconds(00)
     if (today.getTime() > datecheck.getTime()) {
       datecheck.setDate(today.getDate()+1);
@@ -21,8 +21,8 @@ chrome.storage.local.get(['nextalarm'], function(result) {
         when: datecheck.getTime()
       })
     } else {
-      today.setHours(12);
-      today.setMinutes(10);
+      today.setHours(17);
+      today.setMinutes(00);
       today.setSeconds(00);
       chrome.storage.local.set({nextalarm: today.getTime()});
       chrome.alarms.create('pagebold_update_backlog', {
