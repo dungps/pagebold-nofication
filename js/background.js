@@ -49,7 +49,7 @@ chrome.alarms.onAlarm.addListener(function(alarm){
 })
 
 chrome.notifications.onClicked.addListener(function(notificationId) {
-  if (notificationId === 'pagebold_update_backlog') 
+  if (notificationId === 'pagebold_update_backlog') {
     chrome.tabs.create({
       url: 'http://bit.ly/pb-backlog-2017'
     });

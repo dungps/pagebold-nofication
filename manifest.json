@@ -5,6 +5,12 @@
   "description": "Show Pagebold backlog in an mini browser",
   "version": "1.0",
 
+  "icons": {
+    "16": "logo-150x150.png",
+    "48": "logo-150x150.png",
+    "128": "logo-150x150.png"
+  },
+
   "browser_action": {
     "default_icon": {
       "16": "logo-150x150.png"
