@@ -22,6 +22,11 @@
     "scripts": ["js/background.js"],
     "persistent": false
   },
+  
+  "options_ui": {
+    "chrome_style": true,
+    "page": "options.html"
+  },
 
   "permissions": ["tabs", "gcm", "notifications", "alarms", "storage"]
 }
